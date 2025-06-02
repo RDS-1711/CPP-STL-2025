@@ -6,9 +6,13 @@
 > 2. Accessing object return by begin() on empty vector gives crash. 
 
 # Vector Methods
- - **push_back()** :  add element to the end
- - **insert()** : Insert element at desire position
- - **at()** : safe out of bound access
- - **emplace_back()** and **emplace()** : allow for dircet construction of object
+- **push_back()** :  add element to the end
+- **insert()** : Insert element at desire position
+- **at()** : safe out of bound access
+- **emplace_back()** and **emplace()** : allow for dircet construction of object
    inside vector. other method like push and insert create temp object. 
--  
+- **remove()** : move the element to the end not completely removing it.
+- **remove_if()** : take lamda perdicate as a removing criterea. 
+- **erase()**: this remove element physically from container. 
+- **erase()** and **erase_if()** : non member functios are the modern way to erase
+  or remove element form vector.
