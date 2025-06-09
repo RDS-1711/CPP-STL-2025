@@ -91,7 +91,7 @@ int main ()
 	
 	week_days.erase(week_days.begin() + 3, week_days.end());
 	
-	/* old method start */
+	/* old method end */
 	
 	std :: cout << "\n";
 	
@@ -105,5 +105,90 @@ int main ()
 
 	std :: cout << "\n";
 
+	/* Get the vector  capacity */
+	std:: vector<int> numbers_0;
+
+	std :: cout << "vcetor actual size : " << numbers_0.capacity() << "\n";
+
+	for (auto i = 1; i < 30; i++)
+	{
+		numbers_0.push_back(i);
+		std :: cout << "vcetor actual size : " << numbers_0.capacity() << "\n";
+	}
+
+	std :: cout << "vcetor actual size : " << numbers_0.capacity() << "\n";
+
+	/* Clear data from vector */
+
+	std :: vector <std::string> months;
+
+	months.push_back("Jan");
+
+	for (const auto month: months)
+	{
+		std :: cout << month << " ";
+	}
+	
+	std :: cout << "\n";
+	
+	std :: cout << "size of months vector : " << months.size();
+	
+	months.push_back("Feb");
+	months.push_back("March");
+	months.push_back("April");
+	
+	std :: cout << "\n";
+	
+	months.push_back("May");
+	
+	months.clear();
+	std :: cout << "\n";
+	
+	std :: cout << "size of months vector : " << months.size();
+	std :: cout << "\n";
+	std :: cout << "capacity of months vector : " << months.capacity();
+
+	std :: cout << "\n";
+
+	/* pre allocate the memory */
+	std :: vector<int> savings;
+
+	savings.reserve(0xF000000000000);
+
+	std :: cout << "size of saving vector : " << savings.size();
+	std :: cout << "\n";
+	savings.push_back(2);
+	std :: cout << "capacity of saving vector : " << savings.capacity();
+	
+	std :: cout << "\n";
+
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
