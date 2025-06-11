@@ -20,3 +20,10 @@
 - **clear()** : Clear elemenet and reset vector size to zero, but no effect on the capacity.
 - **resize()** : To modify the memory allocated to the vector. 
 - **reserve()** : To reserve the capacity/Memory to the vector
+
+# Iterators 
+- **Input iterator** : To read and progressing through elements. Modification of element is
+  not permitted.
+- **Output iterator** : Direct reading of element is not supported. Its allow adding new 
+  element to back. direct reading is not supported.
+- **Forward iterator** : combine capability of Input and output iterator. 
